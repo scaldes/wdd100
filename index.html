@@ -5,25 +5,30 @@
     <meta charset="utf-8">
     <title>Whitewater Rafting Vacations | Dry Oar Boating | Home</title>
     <style>
-         
-      
+        @import url('https://fonts.googleapis.com/css?family=Rock+Salt');
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.1em;
+        }
         
         #content {
             width: 80%;
             max-width: 960px;
             margin: 0 auto;
-    
         }
+        
+        #top-row {}
         
         #middle-row {
             background-color: #FFE9A4;
+            position: relative;
+            bottom: 150px;
         }
         
         .links {
             background-color: #FFE9A4;
             color: #5666C7;
-            
-            
+            padding: 5px;
         }
         
         h1,
@@ -33,38 +38,87 @@
         h5,
         h6 {
             color: #A43312;
-        }
-        
-        .middle-row-text {
-            color: #124569;
+            font-family: "rock salt", "palitino linotype";
         }
         
         img {
-            
             max-width: 100%;
         }
         
         #bottom-row {
             text-align: center;
-            width: 70%;
+            width: 48%;
             margin: 0 auto;
-            max-width: 770px;
+            position: relative;
+            bottom: 125px;
         }
         
-        #footer {
-            width: 10%;
-       
+        footer {
+            background-color: #FFE9A4;
         }
-      
-       
         
+        section {
+            padding: 15px;
+        }
+        
+        p {
+            line-height: 1.5;
+            color: #124569;
+        }
+        
+        h2 {
+            line-height: 1.2;
+            margin-bottom: .2em;
+        }
+        
+        .leftcol {
+            width: 48%;
+        }
+        
+        #relax-pic {
+            position: relative;
+            bottom: 195px;
+            left: 450px;
+        }
+        
+        .rightcol,
+        {
+            width: 48%;
+        }
+        
+        #rush-text {
+            position: absolute;
+            bottom: 105px;
+            left: 470px;
+            width: 48%;
+        }
+        
+        #social-media {
+            position: relative;
+            left: 720px;
+            bottom: 15px;
+        }
+        
+        footer {
+            width: 100%;
+            position: relative;
+            bottom: 100px;
+        }
+        /*
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: inline-flex;
+            
+        }
+*/
     </style>
 </head>
 
 <body>
     <div id="content"> <img src="images/dryoarlogo.png" alt="Dry Oar Boating Logo" width="150">
-     
-            <nav class="links">
+        <nav class="links">
             <ul>
                 <li><a href="index.html" target="_blank">Home</a></li>
                 <li><a href="index.html" target="_blank">Rivers</a></li>
@@ -73,25 +127,33 @@
                 <li><a href="index.html" target="_blank">Rates/Dates</a></li>
                 <li><a href="index.html" target="_blank">Contact Us</a></li>
             </ul>
-        </nav> <img src="images/banner.JPG" alt="Dry Oar Boating Banner">
+        </nav>
+        <div id="banner"></div> <img src="images/banner.JPG" alt="Dry Oar Boating Banner">
         <section id="top-row">
-            <h2>We run Rivers to relax.</h2>
-            <p>We believe that there is nothing like a river trip for relaxing. That is why we subscribe to the dry oar philosophy of boating.
-                <br> Keeping your oars dry for us means taking time to look around and notice the beauty that surrounds the rivers we love.</p> <img src="images/relaxingriver.jpg" alt="River trip relaxation"> </section>
-        <section id="middle-row"> <img src="images/rapids.jpg" alt="Roaring rapids">
-            <h2>We run Whitewater for the Rush</h2>
-            <p class="middle-row-text">That doesn't mean we don't also like rapids. Opposites in all things after all. We believe that that tenseness that comes when <br> you are looking down the tongue of a big string of waves makes you appreciate the calm beautiful water that always follows.</p>
+            <div class="leftcol">
+                <h2>We run Rivers to relax.</h2>
+                <p>We believe that there is nothing like a river trip for relaxing. That is why we subscribe to the dry oar philosophy of boating. Keeping your oars dry for us means taking time to look around and notice the beauty that surrounds the rivers we love.</p> <img id="relax-pic" src="images/relaxingriver.jpg" alt="River trip relaxation" width="420" height="315"></div>
+        </section>
+        <section id="middle-row">
+            <div class="rightcol"> <img id="pic-rush" src="images/rapids.jpg" alt="Roaring rapids" width="420" height="315"> </div>
+            <div id="rush-text">
+                <h2>We run Whitewater for the Rush</h2>
+                <p>That doesn't mean we don't also like rapids. Opposites in all things after all. We believe that that tenseness that comes when you are looking down the tongue of a big string of waves makes you appreciate the calm beautiful water that always follows.</p>
+            </div>
         </section>
         <section id="bottom-row">
             <h2 class="red">Come Run with us!</h2>
             <p class="red">We invite you to come relax with us on one of the amazing rivers we visit. Check out our trips and let us know which one best suits you. We're waiting to hear from you!</p>
         </section>
-        <footer id="footer">
-            <a href="https://www.facebook.com/" target="_blank" title="This will take you to Facebook.com"><img src="images/facebook.png" alt="Facebook"></a>
-            <a href="https://www.instagram.com/" target="_blank"  title="This will take you to Instagram.com"> <img src="images/instagram.png" alt="Instagram"></a>
-            <a href="https://www.youtube.com/" target="_blank" title="This will take you to Youtube.com"><img src="images/youtube.png" alt="Youtube"></a>
-            
-            <p>&copy; 2016 Dry Oar || Samantha Caldes</p>
+        <footer>
+            <section>
+                <p>&copy; 2016 Dry Oar || Samantha Caldes</p>
+                <div id="social-media">
+                    <a href="https://www.facebook.com/" target="_blank" title="This will take you to Facebook.com"><img src="images/facebook.png" alt="Facebook"></a>
+                    <a href="https://www.instagram.com/" target="_blank" title="This will take you to Instagram.com"> <img src="images/instagram.png" alt="Instagram"></a>
+                    <a href="https://www.youtube.com/" target="_blank" title="This will take you to Youtube.com"><img src="images/youtube.png" alt="Youtube"></a>
+                </div>
+            </section>
         </footer>
     </div>
 </body>

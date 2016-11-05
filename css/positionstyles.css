@@ -2,14 +2,6 @@
 
 
 /* Activity 1 styles */
-html * {
-    box-sizing: border-box;
-}
-
-*:before,
-*:after {
-    box-sizing: border-box;
-}
 
 .red1 {
     width: 100px;

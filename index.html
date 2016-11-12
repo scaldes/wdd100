@@ -12,18 +12,23 @@
         }
         
         #content {
-            width: 80%;
-            max-width: 960px;
-            margin: 0 auto;
+            width: 90%;
+            max-width: 940px;
+            margin: auto;
+            align-items: center;
+        }
+        
+        #top-row,
+        #middle-row {
+            display: flex;
+            flex-flow: row wrap;
         }
         
         #middle-row {
             background-color: #FFE9A4;
-            position: relative;
-            bottom: 150px;
         }
         
-        .links {
+        nav {
             background-color: #FFE9A4;
             color: #5666C7;
             padding: 5px;
@@ -41,18 +46,18 @@
         
         img {
             max-width: 100%;
+            flex-wrap: wrap;
         }
         
         #bottom-row {
             text-align: center;
             width: 48%;
             margin: 0 auto;
-            position: relative;
-            bottom: 125px;
         }
         
         footer {
             background-color: #FFE9A4;
+            height: 55px;
         }
         
         section {
@@ -69,57 +74,31 @@
             margin-bottom: .2em;
         }
         
+        .rightcol,
         .leftcol {
             width: 48%;
-        }
-        
-        #relax-pic {
-            position: relative;
-            bottom: 195px;
-            left: 450px;
-        }
-        
-        .rightcol{
-            width: 48%;
-        }
-        
-        #rush-text {
-            position: absolute;
-            bottom: 105px;
-            left: 470px;
-            width: 48%;
-        }
-        
-        #social-media {
-            position: relative;
-            left: 720px;
-            bottom: 15px;
+            flex: 1 0 15em;
+            margin: .5em;
         }
         
         footer {
             width: 100%;
-            position: relative;
-            bottom: 100px;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            padding-bottom: 27.5px;
+            padding-top: 27.5px;
         }
-        #copyright{
-            position: relative;
-            top: 50px;
+        
+        #banner img {
+            width: 100%;
         }
-        /*
-        ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: inline-flex;
-            
-        }
-*/
     </style>
 </head>
 
 <body>
-    <div id="content"> <img src="images/dryoarlogo.png" alt="Dry Oar Boating Logo" width="150">
-        <nav class="links">
+    <div id="content"> <img class="fullwidth" src="images/dryoarlogo.png" alt="Dry Oar Boating Logo" width="150">
+        <nav>
             <ul>
                 <li><a href="index.html" target="_blank">Home</a></li>
                 <li><a href="index.html" target="_blank">Rivers</a></li>
@@ -129,15 +108,17 @@
                 <li><a href="index.html" target="_blank">Contact Us</a></li>
             </ul>
         </nav>
-        <div id="banner"></div> <img src="images/banner.JPG" alt="Dry Oar Boating Banner">
+        <div id="banner"> <img src="images/banner.JPG" alt="Dry Oar Boating Banner"></div>
         <section id="top-row">
             <div class="leftcol">
                 <h2>We run Rivers to relax.</h2>
-                <p>We believe that there is nothing like a river trip for relaxing. That is why we subscribe to the dry oar philosophy of boating. Keeping your oars dry for us means taking time to look around and notice the beauty that surrounds the rivers we love.</p> <img id="relax-pic" src="images/relaxingriver.jpg" alt="River trip relaxation" width="420" height="315"></div>
+                <p>We believe that there is nothing like a river trip for relaxing. That is why we subscribe to the dry oar philosophy of boating. Keeping your oars dry for us means taking time to look around and notice the beauty that surrounds the rivers we love.</p>
+            </div>
+            <div class="rightcol"> <img id="relax-pic" src="images/relaxingriver.jpg" alt="River trip relaxation" width="420" height="315"></div>
         </section>
         <section id="middle-row">
-            <div class="rightcol"> <img id="pic-rush" src="images/rapids.jpg" alt="Roaring rapids" width="420" height="315"> </div>
-            <div id="rush-text">
+            <div class="leftcol"> <img id="pic-rush" src="images/rapids.jpg" alt="Roaring rapids" width="420" height="315"> </div>
+            <div class="rightcol">
                 <h2>We run Whitewater for the Rush</h2>
                 <p>That doesn't mean we don't also like rapids. Opposites in all things after all. We believe that that tenseness that comes when you are looking down the tongue of a big string of waves makes you appreciate the calm beautiful water that always follows.</p>
             </div>
@@ -147,15 +128,12 @@
             <p class="red">We invite you to come relax with us on one of the amazing rivers we visit. Check out our trips and let us know which one best suits you. We're waiting to hear from you!</p>
         </section>
         <footer>
-            <section>
-                <h2>Find us on Social media</h2>
-                <p id="copyright">&copy; 2016 Dry Oar || Samantha Caldes</p>
-                <div id="social-media">
-                    <a href="https://www.facebook.com/" target="_blank" title="This will take you to Facebook.com"><img src="images/facebook.png" alt="Facebook"></a>
-                    <a href="https://www.instagram.com/" target="_blank" title="This will take you to Instagram.com"> <img src="images/instagram.png" alt="Instagram"></a>
-                    <a href="https://www.youtube.com/" target="_blank" title="This will take you to Youtube.com"><img src="images/youtube.png" alt="Youtube"></a>
-                </div>
-            </section>
+            <p id="copyright">&copy; 2016 Dry Oar || Samantha Caldes</p>
+            <div id="social-media">
+                <a href="https://www.facebook.com/" target="_blank" title="This will take you to Facebook.com"><img src="images/facebook.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com/" target="_blank" title="This will take you to Instagram.com"> <img src="images/instagram.png" alt="Instagram"></a>
+                <a href="https://www.youtube.com/" target="_blank" title="This will take you to Youtube.com"><img src="images/youtube.png" alt="Youtube"></a>
+            </div>
         </footer>
     </div>
 </body>
